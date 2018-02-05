@@ -1,0 +1,121 @@
+.projects-section {
+    // opacity: 0;
+    @include transition(0.6s all);
+    .holder {
+        .holder-content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            h2 {
+                font-size: 41px;
+                font-weight: bold;
+                color: $black-blue;
+                letter-spacing: 0;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+            h4 {
+                width: 50%;
+                font-family: 'Playfair Display';
+                font-weight: bold;
+                font-size: 30px;
+                color: $dark-grey;
+                letter-spacing: 0;
+                margin: 0;
+                line-height: 1.2;
+                .sunglasses-icon {
+                    margin-left: 5px;
+                }
+                @media(max-width: $screen-xs-max) {
+                    width: 100%;
+                }
+            }
+            .projects-blocks {
+                // display: flex;
+                // justify-content: flex-start;
+                // align-items: flex-start;
+                // flex-direction: column;
+                width: 100%;
+                padding-top: 65px;
+                padding-bottom: 65px;
+                .row {
+                    .left-col {
+                        @media(min-width: $screen-sm-min) {
+                            padding-right: 7.5px;
+                        }
+                        a {
+                            &:first-child {
+                                background-color: #AAB1DF;
+                                h5 {
+                                    color: #2437AD;
+                                }
+                            }
+                            &:nth-child(2) {
+                                background-color: #C8DDF6;
+                                h5 {
+                                    color: #117CF8;
+                                }
+                            }
+                        }
+                    }
+                    .right-col {
+                        @media(min-width: $screen-sm-min) {
+                            padding-left: 7.5px;
+                            margin-top: -55px;
+                        }
+                        a {
+                            &:first-child {
+                                background-color: #CFF8EF;
+                                h5 {
+                                    color: #0FA583;
+                                }
+                            }
+                            &:nth-child(2) {
+                                background-color: #FCE1B4;
+                                h5 {
+                                    color: #D98C0E;
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        padding: 90px 35px 30px 35px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        @include transition(0.4s all);
+                        min-height: 566px;
+                        margin-bottom: 15px;
+                        border-radius: 10px;
+                        @media(max-width: $screen-xs-max) {
+                            min-height: 350px;
+                        }
+                        h5 {
+                            font-size: 41px;
+                            font-weight: bold;
+                            letter-spacing: 0;
+                            margin: 0;
+                        }
+                        p {
+                            font-family: 'Playfair Display';
+                            font-weight: bold;
+                            font-size: 30px;
+                            letter-spacing: 0;
+                            margin: 0;
+                            color: rgba(0, 0, 0, 0.55);
+                        }
+                    }
+                }
+            }
+            h5 {
+                font-weight: bold;
+                font-size: 41px;
+                color: #22176D;
+                letter-spacing: 0;
+                margin: auto;
+            }
+        }
+    }
+}

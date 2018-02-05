@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="42px" viewBox="0 0 64 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Labtop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,3.99970728 C6,2.89529944 6.90255737,2 8.00659927,2 L55.9934007,2 C57.1016149,2 58,2.88989258 58,3.99970728 L58,38 L6,38 L6,3.99970728 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Labtop">
+            <g id="Macbook">
+                <path d="M4,38 L4,3.99484381 C4,1.7885525 5.79979503,0 8.00490831,0 L55.9950917,0 C58.2069415,0 60,1.78185079 60,3.99484381 L60,38 L64,38 L64,40 C64,41.1045695 63.0952759,42 61.9967014,42 L2.00329863,42 C0.896907345,42 0,41.1122704 0,40 L0,38 L4,38 Z" id="Rectangle-267" fill="#BDC3C7"></path>
+                <path d="M6.25634766,36 L58.046875,36 L60,38 L4,38 C4.14040415,37.9316502 6.25634766,36 6.25634766,36 Z" id="Rectangle-270" fill-opacity="0.25574615" fill="#2B3E51"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-269" fill="#2B3E51" xlink:href="#path-1"></use>
+                <rect id="Rectangle-271" fill="#3C566F" mask="url(#mask-2)" transform="translate(22.000000, 19.000000) rotate(-315.000000) translate(-22.000000, -19.000000) " x="18" y="-8" width="8" height="54"></rect>
+                <rect id="Rectangle-272" fill="#3C566F" mask="url(#mask-2)" transform="translate(12.000000, 13.000000) rotate(-315.000000) translate(-12.000000, -13.000000) " x="10" y="-6" width="4" height="38"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

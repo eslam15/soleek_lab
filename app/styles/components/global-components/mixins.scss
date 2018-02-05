@@ -1,0 +1,3 @@
+@mixin grayscale($value) {
+    filter: #{ "grayscale(" + $value + ")" };
+}

@@ -1,0 +1,148 @@
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Playfair Display';
+    font-family: "Samsung Sharp";
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.main-header-container {
+    position: absolute;
+    top: 180px;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    @include transition(0.2s all);
+    @media(max-width: $screen-md-custom) {
+        top: 20%;
+    }
+    @media(max-width: $screen-sm-max) {
+        top: 24%;
+    }
+    h1.main-heading {
+        background-image: linear-gradient(-122deg, $main-blue 0%, $main-pink 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 198px;
+        @include transition(1s all);
+        @media (max-width: $screen-sm-custom) {
+            font-size: 170px;
+        }
+        @media (max-width: $screen-sm-max) {
+            font-size: 130px;
+        }
+        @media (max-width: $screen-xs-max) {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+    }
+    &.header-scrolled {
+        width: auto;
+        top: 6px;
+        left: 190px;
+        h1.main-heading {
+            width: auto;
+            font-size: 30px;
+            background-image: linear-gradient(-122deg, $dark-blue 0%, $dark-blue 100%);
+            padding-top: 0;
+        }
+        @media(max-width: $screen-md-custom) {
+            left: 160px;
+        }
+        @media(max-width: $screen-sm-custom) {
+            left: 90px;
+        }
+        @media(max-width: $screen-sm-max) {
+            left: 60px;
+        }
+        @media(max-width: $screen-xs-max) {
+            left: 50px;
+            top: -6px;
+        }
+    }
+}
+
+#projectsSection {
+    .holder-content {
+        h2 {
+            padding-top: 8% !important;
+            @media (max-width: $screen-sm-custom) {
+                padding-top: 9% !important;
+            }
+            @media (max-width: $screen-sm-max) {
+                padding-top: 12% !important;
+            }
+            @media (max-width: $screen-xs-max) {
+                padding-top: 15% !important;
+            }
+            @media (max-width: $screen-xs-medium) {
+                padding-top: 16% !important;
+            }
+            @media (max-width: $screen-xs-small) {
+                padding-top: 18% !important;
+            }
+        }
+    }
+}
+
+#aboutSection {
+    .holder-content {
+        h2 {
+            @media (max-width: $screen-xs-max) {
+                padding-top: 15% !important;
+            }
+            @media (max-width: $screen-xs-medium) {
+                padding-top: 16% !important;
+            }
+            @media (max-width: $screen-xs-small) {
+                padding-top: 18% !important;
+            }
+        }
+    }
+}
+
+#servicesSection {
+    .holder-content {
+        h2 {
+            @media(max-width: $screen-md-custom) {
+                padding-top: 3% !important;
+            }
+            @media(max-width: $screen-sm-custom) {
+                padding-top: 6% !important;
+            }
+            @media (max-width: $screen-sm-max) {
+                padding-top: 12% !important;
+            }
+            @media (max-width: $screen-xs-max) {
+                padding-top: 15% !important;
+            }
+            @media (max-width: $screen-xs-medium) {
+                padding-top: 16% !important;
+            }
+            @media (max-width: $screen-xs-small) {
+                padding-top: 18% !important;
+            }
+        }
+    }
+}
