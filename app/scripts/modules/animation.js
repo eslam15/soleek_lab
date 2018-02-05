@@ -27,7 +27,7 @@ module.exports = function() {
         if (delta < 0) {
             $('.main-header-container').addClass('header-scrolled');
             $('.nav.navbar-nav').addClass('scrolled');
-        } else if (delta > 0) {
+        } else if (delta > 0 && window.location.href.indexOf('hi') > -1) {
             $('.main-header-container').removeClass('header-scrolled');
             $('.nav.navbar-nav').removeClass('scrolled');
         }
