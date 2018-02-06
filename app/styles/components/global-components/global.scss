@@ -57,7 +57,7 @@ a {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 198px;
-        @include transition(1s all);
+        @include transition(0.8s all);
         @media (max-width: $screen-sm-custom) {
             font-size: 170px;
         }
