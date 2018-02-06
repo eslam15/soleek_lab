@@ -92,6 +92,16 @@ a {
     }
 }
 
+.inner-brand {
+    position: absolute;
+    top: 20px;
+    font-size: 30px;
+    background-image: linear-gradient(-122deg, $dark-blue 0%, $dark-blue 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #projectsSection {
     .holder-content {
         h2 {
@@ -105,12 +115,6 @@ a {
             @media (max-width: $screen-xs-max) {
                 padding-top: 25% !important;
             }
-            // @media (max-width: $screen-xs-medium) {
-            //     padding-top: 16% !important;
-            // }
-            // @media (max-width: $screen-xs-small) {
-            //     padding-top: 18% !important;
-            // }
         }
     }
 }
@@ -121,12 +125,6 @@ a {
             @media (max-width: $screen-xs-max) {
                 padding-top: 25% !important;
             }
-            // @media (max-width: $screen-xs-medium) {
-            //     padding-top: 16% !important;
-            // }
-            // @media (max-width: $screen-xs-small) {
-            //     padding-top: 18% !important;
-            // }
         }
     }
 }
@@ -146,12 +144,102 @@ a {
             @media (max-width: $screen-xs-max) {
                 padding-top: 25% !important;
             }
-            // @media (max-width: $screen-xs-medium) {
-            //     padding-top: 16% !important;
-            // }
-            // @media (max-width: $screen-xs-small) {
-            //     padding-top: 18% !important;
-            // }
         }
     }
+}
+
+.wave1-visible,
+.wave2-visible,
+.wave3-visible {
+    position: absolute;
+    @include transition(0.5s all);
+    opacity: 1;
+    @media (max-width: $screen-sm-custom) {
+        display: none;
+    }
+}
+
+.wave1-hidden,
+.wave2-hidden,
+.wave3-hidden {
+    position: absolute;
+    @include transition(0.5s all);
+    opacity: 0;
+}
+
+.wave1 {
+    background: url('../images/wave1.svg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    @include transition(0.5s all);
+    opacity: 1;
+}
+
+.wave1-move {
+    background-size: contain;
+    height: 120px;
+    @include transition(0.5s all);
+    background: url('../images/wave1.svg') no-repeat;
+    background-position: 0 55px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    opacity: 1;
+}
+
+.wave2 {
+    background: url('../images/wave2.svg') no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    @include transition(0.5s all);
+    opacity: 1;
+}
+
+.wave2-move {
+    background: url('../images/wave2.svg') no-repeat;
+    position: absolute;
+    width: 100%;
+    background-position: 35% 35px;
+    position: absolute;
+    background-size: contain;
+    bottom: 0;
+    height: 125px;
+    z-index: 0;
+    @include transition(0.5s all);
+    opacity: 1;
+}
+
+.wave3 {
+    background: url('../images/wave3.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    @include transition(0.5s all);
+    opacity: 1;
+}
+
+.wave3-move {
+    background: url('../images/wave3.svg') no-repeat;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-size: contain;
+    background-position: 135% 35px;
+    height: 110px;
+    @include transition(0.5s all);
+    opacity: 1;
 }
