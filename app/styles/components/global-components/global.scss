@@ -243,3 +243,8 @@ a {
     @include transition(0.5s all);
     opacity: 1;
 }
+
+.holder-content-fade {
+    opacity: 0 !important;
+    @include transition(0.2s all);
+}

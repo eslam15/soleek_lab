@@ -2,6 +2,7 @@ module.exports = function() {
 
     $('a[href="#hi"]').on('click', function() {
         $('.main-header-container').removeClass('header-scrolled');
+        $('#mainSection .holder-content').removeClass('holder-content-fade');
         $('.nav.navbar-nav').removeClass('scrolled');
         $('.wave1-visible').removeClass('wave1-move');
         $('.wave2-visible').removeClass('wave2-move');
@@ -80,10 +81,12 @@ module.exports = function() {
                     if (index == 1 && direction == 'down') {
                         $('.main-header-container').addClass('header-scrolled');
                         $('.nav.navbar-nav').addClass('scrolled');
+                        $('#mainSection .holder-content').addClass('holder-content-fade');
                     }
                     //in section 1
                     if (index == 2 && direction == 'up') {
                         $('.main-header-container').removeClass('header-scrolled');
+                        $('#mainSection .holder-content').removeClass('holder-content-fade');
                         $('.nav.navbar-nav').removeClass('scrolled');
                         $('.wave1-visible').removeClass('wave1-move');
                         $('.wave2-visible').removeClass('wave2-move');
@@ -94,6 +97,7 @@ module.exports = function() {
                         $('.wave1-visible').addClass('wave1-hidden');
                         $('.wave2-visible').addClass('wave2-hidden');
                         $('.wave3-visible').addClass('wave3-hidden');
+
                     }
 
                     // waves is section 2
