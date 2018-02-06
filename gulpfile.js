@@ -7,12 +7,11 @@ const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 const webpack = require('webpack-stream');
 const fileinclude = require('gulp-file-include');
-const svgstore = require('gulp-svgstore');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-var dev = true;
+let dev = true;
 
 gulp.task('styles', () => {
     return gulp.src('app/styles/*.scss')
@@ -46,12 +45,6 @@ gulp.task('fileinclude', () => {
     return gulp.src('app/html/*.html')
         .pipe(fileinclude())
         .pipe(gulp.dest('./app'));
-});
-
-gulp.task('sprite', () => {
-    return gulp.src('app/images/sprite/*.svg')
-        .pipe(svgstore())
-        .pipe(gulp.dest('app/images'))
 });
 
 function lint(files) {
@@ -137,7 +130,6 @@ gulp.task('serve', () => {
         gulp.watch('app/fonts/**/*', ['fonts']);
         gulp.watch('bower.json', ['wiredep', 'fonts']);
         gulp.watch('app/**/*.html', ['fileinclude']);
-        gulp.watch('app/images/sprite/*.svg', ['sprite']);
     });
 });
 

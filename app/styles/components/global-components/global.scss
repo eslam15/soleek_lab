@@ -26,20 +26,32 @@ a {
 
 .main-header-container {
     position: absolute;
-    top: 180px;
+    top: 205px;
     right: auto;
     bottom: auto;
-    left: 0;
-    width: 100%;
+    left: 10%;
+    width: auto;
     z-index: 999999;
-    @include transition(0.2s all);
+    @include transition(0.7s all);
+    @media(max-width: 1440px) {
+        top: 175px;
+    }
     @media(max-width: $screen-md-custom) {
         top: 20%;
+        left: 8%;
+    }
+    @media(max-width: $screen-sm-custom) {
+        left: 4%;
     }
     @media(max-width: $screen-sm-max) {
         top: 24%;
+        left: 3%;
+    }
+    @media(max-width: $screen-xs-small) {
+        top: 29%;
     }
     h1.main-heading {
+        width: auto;
         background-image: linear-gradient(-122deg, $main-blue 0%, $main-pink 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -58,14 +70,11 @@ a {
         }
     }
     &.header-scrolled {
-        width: auto;
         top: 6px;
-        left: 190px;
+        left: 14%;
         h1.main-heading {
-            width: auto;
             font-size: 30px;
             background-image: linear-gradient(-122deg, $dark-blue 0%, $dark-blue 100%);
-            padding-top: 0;
         }
         @media(max-width: $screen-md-custom) {
             left: 160px;
@@ -74,10 +83,10 @@ a {
             left: 90px;
         }
         @media(max-width: $screen-sm-max) {
-            left: 60px;
+            left: 70px;
         }
         @media(max-width: $screen-xs-max) {
-            left: 50px;
+            left: 60px;
             top: -6px;
         }
     }
@@ -94,14 +103,14 @@ a {
                 padding-top: 12% !important;
             }
             @media (max-width: $screen-xs-max) {
-                padding-top: 15% !important;
+                padding-top: 25% !important;
             }
-            @media (max-width: $screen-xs-medium) {
-                padding-top: 16% !important;
-            }
-            @media (max-width: $screen-xs-small) {
-                padding-top: 18% !important;
-            }
+            // @media (max-width: $screen-xs-medium) {
+            //     padding-top: 16% !important;
+            // }
+            // @media (max-width: $screen-xs-small) {
+            //     padding-top: 18% !important;
+            // }
         }
     }
 }
@@ -110,14 +119,14 @@ a {
     .holder-content {
         h2 {
             @media (max-width: $screen-xs-max) {
-                padding-top: 15% !important;
+                padding-top: 25% !important;
             }
-            @media (max-width: $screen-xs-medium) {
-                padding-top: 16% !important;
-            }
-            @media (max-width: $screen-xs-small) {
-                padding-top: 18% !important;
-            }
+            // @media (max-width: $screen-xs-medium) {
+            //     padding-top: 16% !important;
+            // }
+            // @media (max-width: $screen-xs-small) {
+            //     padding-top: 18% !important;
+            // }
         }
     }
 }
@@ -135,14 +144,14 @@ a {
                 padding-top: 12% !important;
             }
             @media (max-width: $screen-xs-max) {
-                padding-top: 15% !important;
+                padding-top: 25% !important;
             }
-            @media (max-width: $screen-xs-medium) {
-                padding-top: 16% !important;
-            }
-            @media (max-width: $screen-xs-small) {
-                padding-top: 18% !important;
-            }
+            // @media (max-width: $screen-xs-medium) {
+            //     padding-top: 16% !important;
+            // }
+            // @media (max-width: $screen-xs-small) {
+            //     padding-top: 18% !important;
+            // }
         }
     }
 }
